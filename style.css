@@ -4,7 +4,10 @@ html {
 }
 /* The code on lines 2-4 centers the text of all h1's on the page.*/
 body {
-    background-color: #00008B;
+    background-color: #404040;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+   border: 5px solid black;
+  border-radius: 20px;
 }
 
 h1 {
@@ -12,6 +15,9 @@ h1 {
     background-color: grey;
     color: white;
     padding: 5px;
+  text-shadow: 2px 2px black;
+  border: 5px Solid Black;
+  border-radius: 20px;
 }
 
 /*The code on lines 6-11 centers all images on the page and gives them a width of 400px.*/
@@ -20,6 +26,8 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 400px;
+   border: 5px solid black;
+  border-radius: 20px;
 }
 
 /* The code on lines 14-16 centers the text of all h2's on the page*/
@@ -28,8 +36,16 @@ h2 {
     background-color: grey;
     color: white;
     padding: 5px;
+   text-shadow: 2px 2px black;
+   border: 5px solid black;
+  border-radius: 20px;
 }
-
+a{
+  color: black;
+}
+a:hover {
+  color: red;
+}
 /* The code on lines 19-22 aligns all the sections horizontally on the bottom*/
 .sectionsContainer {
     display: flex;
@@ -38,16 +54,34 @@ h2 {
 
 /* The code on lines 25-28 gives  a solid black border to section and puts space between them (the margin) */
 .section {
-    border: 5px black solid;
+    
     margin: 5px;
     color: white;
     padding: 5px;
+   border: 5px solid black;
+  border-radius: 20px;
 }
 
 h3 {
     text-align: center;
     background-color:
 
-        #191970;
+        #a3a3a3;
 
+}
+
+.vidcontainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
